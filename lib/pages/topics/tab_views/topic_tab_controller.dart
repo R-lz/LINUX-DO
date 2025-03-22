@@ -48,7 +48,7 @@ class TopicTabController extends BaseController
       clearError();
       String path = this.path;
       if (path == 'latest' && currentPage.value < 1) {
-        path = 'top';
+        path = 'latest';
       }
 
       final response = await apiService.getTopics(path);
